@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87c134fd-dce8-437d-acdb-fbe607df932d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UvZmKmYON9m5iYYNCjHn9vUcs9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\code\Python\demo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.learn-16">
+    <configuration name="demo13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="learn-13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="learn-14" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-14.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="learn-15" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-15.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="learn-16" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-16.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.learn-16" />
+        <item itemvalue="Python.learn-15" />
+        <item itemvalue="Python.learn-14" />
+        <item itemvalue="Python.learn-13" />
+        <item itemvalue="Python.demo13" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:learn-15" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87c134fd-dce8-437d-acdb-fbe607df932d" name="Default Changelist" comment="" />
+      <created>1576239186463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576239186463</updated>
+      <workItem from="1576239200176" duration="706000" />
+      <workItem from="1576241611221" duration="529000" />
+      <workItem from="1576242149657" duration="398000" />
+      <workItem from="1576242557168" duration="1194000" />
+      <workItem from="1576243760488" duration="310000" />
+      <workItem from="1576244079926" duration="237000" />
+      <workItem from="1576244326094" duration="239000" />
+      <workItem from="1576245003249" duration="50000" />
+      <workItem from="1576245061247" duration="681000" />
+      <workItem from="1576324998834" duration="6463000" />
+      <workItem from="1576411229636" duration="576000" />
+      <workItem from="1576411814860" duration="6589000" />
+      <workItem from="1576499640703" duration="4901000" />
+      <workItem from="1576581971226" duration="7102000" />
+      <workItem from="1576673416837" duration="10346000" />
+      <workItem from="1576760158739" duration="7477000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="662" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576763309781">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state x="662" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/90.0.1958.1152@90.0.1958.1152" timestamp="1576763309781" />
+    <state x="801" y="379" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576585366887">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state x="801" y="379" key="#com.intellij.fileTypes.FileTypeChooser/90.0.1958.1152@90.0.1958.1152" timestamp="1576585366887" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1576763320317">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/90.0.1958.1152@90.0.1958.1152" timestamp="1576763320317" />
+    <state width="1915" height="326" key="GridCell.Tab.0.bottom" timestamp="1576767765109">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="326" key="GridCell.Tab.0.bottom/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765109" />
+    <state width="1915" height="326" key="GridCell.Tab.0.center" timestamp="1576767765109">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="326" key="GridCell.Tab.0.center/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765109" />
+    <state width="1915" height="326" key="GridCell.Tab.0.left" timestamp="1576767765108">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="326" key="GridCell.Tab.0.left/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765108" />
+    <state width="1915" height="326" key="GridCell.Tab.0.right" timestamp="1576767765109">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="326" key="GridCell.Tab.0.right/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765109" />
+    <state width="1915" height="392" key="GridCell.Tab.1.bottom" timestamp="1576762786952">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="392" key="GridCell.Tab.1.bottom/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786952" />
+    <state width="1915" height="392" key="GridCell.Tab.1.center" timestamp="1576762786951">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="392" key="GridCell.Tab.1.center/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786951" />
+    <state width="1915" height="392" key="GridCell.Tab.1.left" timestamp="1576762786951">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="392" key="GridCell.Tab.1.left/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786951" />
+    <state width="1915" height="392" key="GridCell.Tab.1.right" timestamp="1576762786951">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="1915" height="392" key="GridCell.Tab.1.right/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786951" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1576763273004">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state width="212" height="477" key="HiddenNamespacesPopup/90.0.1958.1152@90.0.1958.1152" timestamp="1576763273004" />
+    <state x="640" y="80" width="1286" height="941" key="SettingsEditor" timestamp="1576412602516">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state x="640" y="80" width="1286" height="941" key="SettingsEditor/90.0.1958.1152@90.0.1958.1152" timestamp="1576412602516" />
+    <state x="755" y="400" key="com.intellij.ide.util.TipDialog" timestamp="1576760158993">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state x="755" y="400" key="com.intellij.ide.util.TipDialog/90.0.1958.1152@90.0.1958.1152" timestamp="1576760158993" />
+    <state x="732" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1576767854105">
+      <screen x="90" y="0" width="1958" height="1152" />
+    </state>
+    <state x="732" y="254" width="672" height="678" key="search.everywhere.popup/90.0.1958.1152@90.0.1958.1152" timestamp="1576767854105" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demo$learn_15.coverage" NAME="learn-15 Coverage Results" MODIFIED="1576767760484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$learn_12.coverage" NAME="learn-12 Coverage Results" MODIFIED="1576584419314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$learn_16.coverage" NAME="learn-16 Coverage Results" MODIFIED="1576767765103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$learn_11.coverage" NAME="learn-11 Coverage Results" MODIFIED="1576417041631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$demo.coverage" NAME="demo Coverage Results" MODIFIED="1576336504193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$learn_14.coverage" NAME="learn-14 Coverage Results" MODIFIED="1576684368231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$learn_13.coverage" NAME="learn-13 Coverage Results" MODIFIED="1576588642749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$demo13.coverage" NAME="demo13 Coverage Results" MODIFIED="1576587376432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
