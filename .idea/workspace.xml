@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87c134fd-dce8-437d-acdb-fbe607df932d" name="Default Changelist" comment="" />
+    <list default="true" id="87c134fd-dce8-437d-acdb-fbe607df932d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-16.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn-16.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +31,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UvZmKmYON9m5iYYNCjHn9vUcs9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -170,12 +177,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:learn-15" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -207,7 +209,8 @@
       <workItem from="1576499640703" duration="4901000" />
       <workItem from="1576581971226" duration="7102000" />
       <workItem from="1576673416837" duration="10346000" />
-      <workItem from="1576760158739" duration="7477000" />
+      <workItem from="1576760158739" duration="7841000" />
+      <workItem from="1576842330437" duration="8753000" />
     </task>
     <servers />
   </component>
@@ -227,38 +230,38 @@
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/90.0.1958.1152@90.0.1958.1152" timestamp="1576763320317" />
-    <state width="1915" height="326" key="GridCell.Tab.0.bottom" timestamp="1576767765109">
+    <state width="1915" height="326" key="GridCell.Tab.0.bottom" timestamp="1576852145029">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="326" key="GridCell.Tab.0.bottom/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765109" />
-    <state width="1915" height="326" key="GridCell.Tab.0.center" timestamp="1576767765109">
+    <state width="1915" height="326" key="GridCell.Tab.0.bottom/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145029" />
+    <state width="1915" height="326" key="GridCell.Tab.0.center" timestamp="1576852145028">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="326" key="GridCell.Tab.0.center/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765109" />
-    <state width="1915" height="326" key="GridCell.Tab.0.left" timestamp="1576767765108">
+    <state width="1915" height="326" key="GridCell.Tab.0.center/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145028" />
+    <state width="1915" height="326" key="GridCell.Tab.0.left" timestamp="1576852145028">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="326" key="GridCell.Tab.0.left/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765108" />
-    <state width="1915" height="326" key="GridCell.Tab.0.right" timestamp="1576767765109">
+    <state width="1915" height="326" key="GridCell.Tab.0.left/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145028" />
+    <state width="1915" height="326" key="GridCell.Tab.0.right" timestamp="1576852145028">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="326" key="GridCell.Tab.0.right/90.0.1958.1152@90.0.1958.1152" timestamp="1576767765109" />
-    <state width="1915" height="392" key="GridCell.Tab.1.bottom" timestamp="1576762786952">
+    <state width="1915" height="326" key="GridCell.Tab.0.right/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145028" />
+    <state width="1915" height="392" key="GridCell.Tab.1.bottom" timestamp="1576768685897">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="392" key="GridCell.Tab.1.bottom/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786952" />
-    <state width="1915" height="392" key="GridCell.Tab.1.center" timestamp="1576762786951">
+    <state width="1915" height="392" key="GridCell.Tab.1.bottom/90.0.1958.1152@90.0.1958.1152" timestamp="1576768685897" />
+    <state width="1915" height="392" key="GridCell.Tab.1.center" timestamp="1576768685897">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="392" key="GridCell.Tab.1.center/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786951" />
-    <state width="1915" height="392" key="GridCell.Tab.1.left" timestamp="1576762786951">
+    <state width="1915" height="392" key="GridCell.Tab.1.center/90.0.1958.1152@90.0.1958.1152" timestamp="1576768685897" />
+    <state width="1915" height="392" key="GridCell.Tab.1.left" timestamp="1576768685897">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="392" key="GridCell.Tab.1.left/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786951" />
-    <state width="1915" height="392" key="GridCell.Tab.1.right" timestamp="1576762786951">
+    <state width="1915" height="392" key="GridCell.Tab.1.left/90.0.1958.1152@90.0.1958.1152" timestamp="1576768685897" />
+    <state width="1915" height="392" key="GridCell.Tab.1.right" timestamp="1576768685897">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state width="1915" height="392" key="GridCell.Tab.1.right/90.0.1958.1152@90.0.1958.1152" timestamp="1576762786951" />
+    <state width="1915" height="392" key="GridCell.Tab.1.right/90.0.1958.1152@90.0.1958.1152" timestamp="1576768685897" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1576763273004">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
@@ -267,19 +270,19 @@
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
     <state x="640" y="80" width="1286" height="941" key="SettingsEditor/90.0.1958.1152@90.0.1958.1152" timestamp="1576412602516" />
-    <state x="755" y="400" key="com.intellij.ide.util.TipDialog" timestamp="1576760158993">
+    <state x="755" y="400" key="com.intellij.ide.util.TipDialog" timestamp="1576844414219">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state x="755" y="400" key="com.intellij.ide.util.TipDialog/90.0.1958.1152@90.0.1958.1152" timestamp="1576760158993" />
-    <state x="732" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1576767854105">
+    <state x="755" y="400" key="com.intellij.ide.util.TipDialog/90.0.1958.1152@90.0.1958.1152" timestamp="1576844414219" />
+    <state x="732" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1576850862035">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
-    <state x="732" y="254" width="672" height="678" key="search.everywhere.popup/90.0.1958.1152@90.0.1958.1152" timestamp="1576767854105" />
+    <state x="732" y="254" width="672" height="678" key="search.everywhere.popup/90.0.1958.1152@90.0.1958.1152" timestamp="1576850862035" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demo$learn_15.coverage" NAME="learn-15 Coverage Results" MODIFIED="1576767760484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/demo$learn_12.coverage" NAME="learn-12 Coverage Results" MODIFIED="1576584419314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$learn_16.coverage" NAME="learn-16 Coverage Results" MODIFIED="1576767765103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$learn_16.coverage" NAME="learn-16 Coverage Results" MODIFIED="1576852145023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/demo$learn_11.coverage" NAME="learn-11 Coverage Results" MODIFIED="1576417041631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/demo$demo.coverage" NAME="demo Coverage Results" MODIFIED="1576336504193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/demo$learn_14.coverage" NAME="learn-14 Coverage Results" MODIFIED="1576684368231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

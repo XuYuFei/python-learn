@@ -41,3 +41,241 @@ if __name__ == '__main__':
         - name：进程实例别名
         - pid：当前实例的PID值
 """
+from multiprocessing import Process
+import time
+import os
+
+# 两个子进程将会调用的方法
+def child_1(interval):
+    print("子进程（%s）开始执行，父进程为（%s）" % (os.getpid(), os.getppid()))
+    t_start = time.time()
+    time.sleep(interval)
+    t_end = time.time()
+    print("子进程（%s）执行时间为'%0.2f'秒" % (os.getpid(), t_end - t_start))
+
+def child_2(interval):
+    print("子进程（%s）开始执行，父进程为（%s）" % (os.getpid(), os.getppid()))
+    t_start = time.time()
+    time.sleep(interval)
+    t_end = time.time()
+    print("子进程（%s）执行时间为'%0.2f'秒" % (os.getpid(), t_end - t_start))
+
+if __name__ == '__main__':
+    print('-' * 10, '父进程开始执行', '-' * 10)
+    print("父进程PID：%s" % os.getpid())
+    p1 = Process(target = child_1, args = (1,))
+    p2 = Process(target = child_2, args = (2,), name = 'hello')
+    p1.start()
+    p2.start()
+    print("p1.is_alive=%s" %p1.is_alive())
+    print("p2.is_alive=%s" %p2.is_alive())
+    print("p1.name=%s" %p1.name)
+    print("p1.pid=%s" %p1.pid)
+    print("p2.name=%s" %p2.name)
+    print("p2.pid=%s" %p2.pid)
+    print("-" * 5, '等待子进程', '-' * 5)
+    p1.join()
+    p2.join()
+    print('-' * 10, '父进程执行结束', '-' * 10)
+
+# 16.2.2 - 使用Process子类创建进程
+from multiprocessing import Process
+import time
+import os
+
+
+# 继承Process
+class SubProcess(Process):
+    def __init__(self, interval, name = ''):
+        Process.__init__(self)
+        self.interval = interval
+        if name:
+            self.name = name
+
+    # 重写Process类run()方法
+    def run(self):
+        print("子进程（%s）开始执行，父进程为（%s）" % (os.getpid(), os.getppid()))
+        t_start = time.time()
+        time.sleep(self.interval)
+        t_end = time.time()
+        print("子进程（%s）执行结束，耗时%0.2f秒" %(os.getpid(), t_end - t_start))
+
+if __name__ == '__main__':
+    print("-" * 15, "父进程开始执行", "-" * 15)
+    print("父进程PID：%s" % os.getpid())
+    p1 = SubProcess(interval = 1, name = 'hello')
+    p2 = SubProcess(interval = 2)
+    # 对于一个不包含target属性的Process类执行start()方法，就会运行这个类中的run()方法
+    p1.start()
+    p2.start()
+    print("p1.is_alive=%s" % p1.is_alive())
+    print("p2.is_alive=%s" % p2.is_alive())
+    print("p1.name = %s" % p1.name)
+    print("p1.pid = %s" % p1.pid)
+    print("p2.name = %s" % p2.name)
+    print("p2.pid = %s" % p2.pid)
+    print("-" * 5, "等待子进程", "-" * 5)
+    p1.join()
+    p2.join()
+    print("-" * 15, "父进程结束", "-" * 15)
+
+# 16.2.3 - 使用进程池Pool创建进程
+"""
+    Pool类常用方法：
+        - apply_async(func[, args[, kwds]])：使用非阻塞方式调用func()函数（并行执行，阻塞方式必须等待上一个进程退出才能执行下一个进程）
+        - apply(func[, args[, kwds]])：使用阻塞方式调用func()函数
+        - close()：关闭Pool，使其不再接受新的任务
+        - terminate()：不管任务是否完成，立即终止
+        - join()：主进程阻塞，等待子进程的退出，必须在close或terminate后使用
+"""
+from multiprocessing import Pool
+import time, os
+
+def task(name):
+    print("子进程（%s）执行task %s..." % (os.getpid(), name))
+    time.sleep(1)
+
+if __name__ == '__main__':
+    print('父进程（%s）。' % os.getpid())
+    p = Pool(3)                             # 定义一个进程池，最大进程数3
+    for i in range(10):                     # 从0开始循环10次
+        p.apply_async(task, args = (i,))    # 使用非阻塞方式调用task()函数
+    print("等待所有子进程结束......")
+    p.close()                               # 关闭进程池，关闭后p不再接收新的请求
+    p.join()                                # 等待子进程结束
+    print('所有子进程结束。')
+
+
+''' 16.3 - 通过队列实现进程间通信 '''
+from multiprocessing import Process
+
+def plus():
+    print('-' * 10, '子进程1开始', '-' * 10)
+    global g_num
+    g_num += 50
+    print('g_num is %d' %g_num)
+    print('-' * 10, '子进程1结束', '-' * 10)
+
+def minus():
+    print('-' * 10, '子进程2开始', '-' * 10)
+    global g_num
+    g_num -= 50
+    print('g_num is %d' %g_num)
+    print('-' * 10, '子进程2结束', '-' * 10)
+
+g_num = 100
+
+if __name__ == '__main__':
+    print('-' * 10, '主进程开始', '-' * 10)
+    print('g_num is %d' % g_num)
+    p1 = Process(target=plus)
+    p2 = Process(target=minus)
+    p1.start()
+    p2.start()
+    p1.join()
+    p2.join()
+    print('-' * 10, '主进程结束', '-' * 10)
+
+# 16.3.1 - 队列简介
+"""
+    队列（Queue）就是模仿现实中的排队。
+    队列两个特点：
+        - 新来的排在队尾
+        - 最前面的完成后离队，后面一个跟上
+"""
+
+# 16.3.2 - 多进程队列的使用
+"""
+    Queue常用方法：
+    - Queue.qsize：返回当前队列包含的消息数量；
+    - Queue.empty()：如果消息队列为空，返回True；反之返回False；
+    - Queue.full()：如果队列满了，返回True；反之返回False；
+    - Queue.get(block[, timeout])：获取队列中的一条消息，然后将其从队列中移除;block默认值为True;
+        -- 若block=True，且没有设置timeout，消息队列为空，此时程序将被阻塞（停在读取状态），直到从消息队列读到消息为止；
+           如果设置了timeout，则会等待timeout秒，若还没读取到任何消息，则抛出"Queue.Empty"异常。
+        -- 若block=False，消息队列为空，则会立即抛出"Queue.Empty"异常。
+    - Queue.get_nowait()：相当于Queue.get(False)
+    - Queue.put(item, [block [, timeout]])：将消息写入队列，block默认值为True;
+        -- 若block=True，且没有设置timeout，消息队列如果已经没有空间可写入，此时程序将被阻塞（停在写入状态），直到从消息队列腾出空间为止；
+           如果设置了timeout，则会等待timeout秒，若还没有空间，则抛出"Queue.Full"异常；
+        -- 若block=Flase,消息队列没有空间可写入，则会立即抛出"Queue.Full"异常；
+    - Queue.put_nowait(item)：相当于Queue.put(item, false)
+"""
+from multiprocessing import Queue
+
+if __name__ == '__main__':
+    print('*' * 15, '多进程队列的使用', '*' * 15)
+    q = Queue(3)
+    q.put('消息1')
+    q.put('消息2')
+    print(q.full())
+    q.put('消息3')
+    print(q.full())
+
+    try:
+        q.put('消息4', True, 2)
+    except:
+        print('消息队列已满，现有消息数量：%s' %q.qsize())
+
+    try:
+        q.put_nowait('消息4')
+    except:
+        print('消息队列已满，现有消息数量：%s' %q.qsize())
+
+    if not q.empty():
+        print('从队列中读取消息')
+        for i in range(q.qsize()):
+            print(q.get_nowait())
+    if not q.full():
+        q.put_nowait('消息4')
+
+# 16.3.3 - 使用队列在进程间通信
+from multiprocessing import Process, Queue
+import time
+
+def write_task(q):
+    if not q.full():
+        for i in range(5):
+            message = '消息' + str(i)
+            q.put(message)
+            print('写入：%s' %message)
+
+def read_task(q):
+    time.sleep(1)
+    while not q.empty():
+        print('读取：%s' % q.get(True, 2))
+
+if __name__ == '__main__':
+    print('*' * 10, '父进程开始', '*' * 10)
+    q = Queue()
+    pw = Process(target=write_task, args=(q,))
+    pr = Process(target=read_task, args=(q,))
+    pw.start()
+    pr.start()
+    pw.join()
+    pr.join()
+
+''' 16.4 什么是线程 '''
+"""
+    线程（Thread）:
+        - 是操作系统能够进行运算调度的最小单位；
+        - 它被包含在进程中，是进程中的实际运作单位；
+        - 一条线程指的是进程中一个单一顺序的控制流，一个进程中多以并发多个线程，每条线程执行不同的任务；
+"""
+''' 16.5 - 创建线程 '''
+"""
+    Python标准库提供两个模块：_thread - 低级模块、threading - 高级模块
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
