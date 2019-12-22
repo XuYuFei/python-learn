@@ -14,18 +14,21 @@
         - args：传递给target函数的元组
         - kwargs：传递给target函数的参数字典 
 """
-from multiprocessing import Process # 导入模块
+from multiprocessing import Process  # 导入模块
+
 
 # 执行子进程
 def test(interval):
     print('我是子进程')
 
+
 # 执行主进程
 def main():
     print('我是主进程')
-    p = Process(target = test, args = (1,)) # 实例化Process进程类
+    p = Process(target=test, args=(1,))  # 实例化Process进程类
     p.start()
     print('主进程结束')
+
 
 if __name__ == '__main__':
     main()
@@ -45,6 +48,7 @@ from multiprocessing import Process
 import time
 import os
 
+
 # 两个子进程将会调用的方法
 def child_1(interval):
     print("子进程（%s）开始执行，父进程为（%s）" % (os.getpid(), os.getppid()))
@@ -53,6 +57,7 @@ def child_1(interval):
     t_end = time.time()
     print("子进程（%s）执行时间为'%0.2f'秒" % (os.getpid(), t_end - t_start))
 
+
 def child_2(interval):
     print("子进程（%s）开始执行，父进程为（%s）" % (os.getpid(), os.getppid()))
     t_start = time.time()
@@ -60,19 +65,20 @@ def child_2(interval):
     t_end = time.time()
     print("子进程（%s）执行时间为'%0.2f'秒" % (os.getpid(), t_end - t_start))
 
+
 if __name__ == '__main__':
     print('-' * 10, '父进程开始执行', '-' * 10)
     print("父进程PID：%s" % os.getpid())
-    p1 = Process(target = child_1, args = (1,))
-    p2 = Process(target = child_2, args = (2,), name = 'hello')
+    p1 = Process(target=child_1, args=(1,))
+    p2 = Process(target=child_2, args=(2,), name='hello')
     p1.start()
     p2.start()
-    print("p1.is_alive=%s" %p1.is_alive())
-    print("p2.is_alive=%s" %p2.is_alive())
-    print("p1.name=%s" %p1.name)
-    print("p1.pid=%s" %p1.pid)
-    print("p2.name=%s" %p2.name)
-    print("p2.pid=%s" %p2.pid)
+    print("p1.is_alive=%s" % p1.is_alive())
+    print("p2.is_alive=%s" % p2.is_alive())
+    print("p1.name=%s" % p1.name)
+    print("p1.pid=%s" % p1.pid)
+    print("p2.name=%s" % p2.name)
+    print("p2.pid=%s" % p2.pid)
     print("-" * 5, '等待子进程', '-' * 5)
     p1.join()
     p2.join()
@@ -86,7 +92,7 @@ import os
 
 # 继承Process
 class SubProcess(Process):
-    def __init__(self, interval, name = ''):
+    def __init__(self, interval, name=''):
         Process.__init__(self)
         self.interval = interval
         if name:
@@ -98,13 +104,14 @@ class SubProcess(Process):
         t_start = time.time()
         time.sleep(self.interval)
         t_end = time.time()
-        print("子进程（%s）执行结束，耗时%0.2f秒" %(os.getpid(), t_end - t_start))
+        print("子进程（%s）执行结束，耗时%0.2f秒" % (os.getpid(), t_end - t_start))
+
 
 if __name__ == '__main__':
     print("-" * 15, "父进程开始执行", "-" * 15)
     print("父进程PID：%s" % os.getpid())
-    p1 = SubProcess(interval = 1, name = 'hello')
-    p2 = SubProcess(interval = 2)
+    p1 = SubProcess(interval=1, name='hello')
+    p2 = SubProcess(interval=2)
     # 对于一个不包含target属性的Process类执行start()方法，就会运行这个类中的run()方法
     p1.start()
     p2.start()
@@ -131,37 +138,41 @@ if __name__ == '__main__':
 from multiprocessing import Pool
 import time, os
 
+
 def task(name):
     print("子进程（%s）执行task %s..." % (os.getpid(), name))
     time.sleep(1)
 
+
 if __name__ == '__main__':
     print('父进程（%s）。' % os.getpid())
-    p = Pool(3)                             # 定义一个进程池，最大进程数3
-    for i in range(10):                     # 从0开始循环10次
-        p.apply_async(task, args = (i,))    # 使用非阻塞方式调用task()函数
+    p = Pool(3)  # 定义一个进程池，最大进程数3
+    for i in range(10):  # 从0开始循环10次
+        p.apply_async(task, args=(i,))  # 使用非阻塞方式调用task()函数
     print("等待所有子进程结束......")
-    p.close()                               # 关闭进程池，关闭后p不再接收新的请求
-    p.join()                                # 等待子进程结束
+    p.close()  # 关闭进程池，关闭后p不再接收新的请求
+    p.join()  # 等待子进程结束
     print('所有子进程结束。')
-
 
 ''' 16.3 - 通过队列实现进程间通信 '''
 from multiprocessing import Process
+
 
 def plus():
     print('-' * 10, '子进程1开始', '-' * 10)
     global g_num
     g_num += 50
-    print('g_num is %d' %g_num)
+    print('g_num is %d' % g_num)
     print('-' * 10, '子进程1结束', '-' * 10)
+
 
 def minus():
     print('-' * 10, '子进程2开始', '-' * 10)
     global g_num
     g_num -= 50
-    print('g_num is %d' %g_num)
+    print('g_num is %d' % g_num)
     print('-' * 10, '子进程2结束', '-' * 10)
+
 
 g_num = 100
 
@@ -215,12 +226,12 @@ if __name__ == '__main__':
     try:
         q.put('消息4', True, 2)
     except:
-        print('消息队列已满，现有消息数量：%s' %q.qsize())
+        print('消息队列已满，现有消息数量：%s' % q.qsize())
 
     try:
         q.put_nowait('消息4')
     except:
-        print('消息队列已满，现有消息数量：%s' %q.qsize())
+        print('消息队列已满，现有消息数量：%s' % q.qsize())
 
     if not q.empty():
         print('从队列中读取消息')
@@ -233,17 +244,20 @@ if __name__ == '__main__':
 from multiprocessing import Process, Queue
 import time
 
+
 def write_task(q):
     if not q.full():
         for i in range(5):
             message = '消息' + str(i)
             q.put(message)
-            print('写入：%s' %message)
+            print('写入：%s' % message)
+
 
 def read_task(q):
     time.sleep(1)
     while not q.empty():
         print('读取：%s' % q.get(True, 2))
+
 
 if __name__ == '__main__':
     print('*' * 10, '父进程开始', '*' * 10)
@@ -267,15 +281,196 @@ if __name__ == '__main__':
     Python标准库提供两个模块：_thread - 低级模块、threading - 高级模块
 """
 
+# 16.5.1 - 使用threading模块创建线程
+"""
+    threading模块提供了一个Thread类来代表一个线程对象
+    Thread语法格式：
+        - Thread([group [, target [, name [, args [, kwargs]]]]])
+    参数说明：
+        - group：None，为以后版本保留
+        - target：表示一个可调用对象，线程启动时，run()方法将调用此对象，默认为None，表示不调用任何内容
+        - name：当前线程名称，默认创建一个“Thread-N”格式的唯一名称
+        - args：传递给target()函数的参数元组
+        - kwargs：传递给target()函数的参数字典
+"""
+import threading, time
 
 
+def process():
+    for i in range(3):
+        time.sleep(1)
+        print('thread name is %s' % threading.current_thread().name)
 
 
+if __name__ == '__main__':
+    print('*' * 20, '16.5.1 - 主线程开始', '*' * 20)
+    threads = [threading.Thread(target=process) for i in range(4)]  # 创建4个线程，存入列表
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
+    print('*' * 20, '16.5.1 - 主线程结束', '*' * 20)
+
+# 16.5.2 - 使用Thread子类创建线程
+import threading, time
 
 
+class SubThread(threading.Thread):
+    def run(self):
+        for i in range(3):
+            time.sleep(1)
+            msg = '子线程' + self.name + '执行，i=' + str(i)  # name属性中保存当前线程的名字
+            print(msg)
 
 
+if __name__ == '__main__':
+    print('*' * 20, '16.5.2 - 主线程开始', '*' * 20)
+    t1 = SubThread()
+    t2 = SubThread()
+    t1.start()
+    t2.start()
+    t1.join()
+    t2.join()
+    print('*' * 20, '16.5.2 - 主线程结束', '*' * 20)
 
 
+def hr(sign, number, string):
+    print(sign * number, string, sign * number)
 
 
+''' 16.6 - 线程间通信 '''
+"""
+    在一个进程内的所有线程共享全局变量，能够在不使用其他方式的前提下完成多线程之间的数据共享
+"""
+from threading import Thread
+import time
+
+
+def plus():
+    hr('*', 15, '子线程1开始')
+    global g_num
+    g_num += 50
+    print('g_num is %d' % g_num)
+    hr('*', 15, '子线程1结束')
+
+
+def minus():
+    time.sleep(1)
+    hr('*', 15, '子线程2开始')
+    global g_num
+    g_num -= 50
+    print('g_num is %d' % g_num)
+    hr('*', 15, '子线程2结束')
+
+
+g_num = 100
+if __name__ == '__main__':
+    hr('*', 20, '16.6 - 主线程开始')
+    print('g_num is %d' % g_num)
+    t1 = Thread(target=plus)
+    t2 = Thread(target=minus)
+    t1.start()
+    t2.start()
+    t1.join()
+    t2.join()
+    hr('*', 20, '16.6 - 主线程结束')
+
+# 16.6.1 - 什么是互斥锁
+"""
+    互斥锁（Mutual exclusion:Mutex）：防止多个进程同时读写某一块内存区域。
+    状态：锁定、非锁定
+"""
+# 16.6.2 - 使用互斥锁
+"""
+    threading模块中使用Lock类处理锁定
+    Lock类方法：
+        - acquire()：获取锁定，如果有必要，需要阻塞到锁定释放为止。
+        - release()：释放锁
+    示例：
+        mutex = threading.Lock()   # 创建锁
+        mutex.acquire([blocking])  # 锁定
+        mutex.release()            # 释放锁
+"""
+from threading import Thread, Lock
+import time
+
+n = 100
+
+
+def task():
+    global n
+    mutex.acquire()
+    temp = n
+    time.sleep(0.1)
+    n = temp - 1
+    print('购买成功，剩余%d张电影票' % n)
+    mutex.release()
+
+
+if __name__ == '__main__':
+    mutex = Lock()
+    t_l = []
+    for i in range(10):
+        t = Thread(target=task)
+        t_l.append(t)
+        t.start()
+    for t in t_l:
+        t.join()
+
+# 16.6.3 - 使用队列在线程间通信
+"""
+    队列在线程间通信：使用queue模块的Queue队列
+    使用Queue线程间通信通常应用于生产者消费者模式
+"""
+from queue import Queue
+import random, threading, time
+
+
+# 生产者类
+class Producer(threading.Thread):
+    def __init__(self, name, queue):
+        threading.Thread.__init__(self, name=name)
+        self.data = queue
+
+    def run(self):
+        for i in range(5):
+            print('生产者%s将产品%d加入队列！' % (self.getName(), i))
+            self.data.put(i)
+            time.sleep(random.random())
+        print('生产者%s完成！' % self.getName())
+
+
+# 消费者类
+class Consumer(threading.Thread):
+    def __init__(self, name, queue):
+        threading.Thread.__init__(self, name=name)
+        self.data = queue
+
+    def run(self):
+        for i in range(5):
+            val = self.data.get()
+            print('消费者%s将产品%d从队列中取出！' % (self.getName(), val))
+            time.sleep(random.random())
+        print('消费者%s完成！' % self.getName())
+
+
+if __name__ == '__main__':
+    hr('*', 30, '16.6.3 - 主线程开始')
+    queue = Queue()
+    producer = Producer('Producer', queue)
+    consumer = Consumer('Consumer', queue)
+    producer.start()
+    consumer.start()
+    producer.join()
+    consumer.join()
+    hr('*', 30, '16.6.3 - 主线程结束')
+
+''' 16.7 - 关于线程需要注意的两点 '''
+"""
+    # 16.7.1 - 进程和线程的区别
+    - 进程是系统进行资源分配和调度的一个独立单位，线程是进程的一个实体，是CPU调度和分派的基本单位；
+    - 进程之间是相互独立的，多进程中，同一个变量，各自有一份备份存在于每个进程中，但互不影响；
+      而同一个进程的多个线程是内存共享的，所有变量都由所有线程共享；
+    - 由于进程间是独立的，因此一个进程的崩坏不会影响其他的进程；
+      而线程是包含在进程之内的，线程的崩溃就会引发进程的崩溃，继而导致同一进程内的其他线程的崩溃。
+"""
