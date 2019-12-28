@@ -250,13 +250,43 @@ print(soup.prettify())                              # 打印格式化后的代�
 """
     命令：pip install pywin32
 """
+"""
+    国内镜像过慢，安装时在后面加 -i 地址
+    例：pip install pywin32 -i https://mirrors.aliyun.com/pypi/simple/
+    参考网址：https://blog.csdn.net/sunny_happy08/article/details/83113692
+"""
 
+# 21.4.2 - 创建Scrapy项目
+"""
+    创建scrapyDemo项目：scrapy startProject scrapyDemo
+"""
 
+# 21.4.3 - 创建爬虫
+"""
+    见：scrapyDemo项目下 scrapyDemo/spiders/quotes.py
+    命令：scrapy crawl quotes
+"""
 
+# 21.4.4 - 获取数据
+"""
+    Scrapy爬虫框架，可以通过特定的CSS或者XPath表达式来选择HTML文件中的某一处，并且提取出相应的数据。
+"""
 
+# 21.4.4 - 1 - CSS提取数据
+"""
+    使用CSS提取HTML文件中的某一处数据时，可以指定HTML文件中的标签名称；
+    response.css('title').extract()
+    response.css('title::text').extract_firsst() 或 response.css('title::text')[0].extract()
+"""
 
+# 21.4.4 - 2 - XPath提取数据
+"""
+    使用XPath表达式提取HTML文件中的某一处数据时，需要根据XPath表达式的语法规定来获取指定的数据信息；
+    获取title标签内信息：
+        - response.xpath('//title/text()').extract_first()
+"""
 
-
+# 21.4.4 - 3 - 翻页提取数据
 
 
 
