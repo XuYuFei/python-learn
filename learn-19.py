@@ -191,33 +191,161 @@ if __name__ == '__main__':
 """
 
 # 19.2.6 - 1 - 什么是BoxSizer
+"""
+    BoxSizer是wxPython提供的sizer中的最简单和最灵活的。
+    一个BoxSizer是一个垂直列或水平行，窗口部件从左至右或从上到下布置在一条线上。
+"""
+
 # 19.2.6 - 2 - 使用BoxSizer布局
+"""
+    尺寸器会管理组件的尺寸。
+    只要将部件添加到尺寸器上，再加上一些布局参数，然后让尺寸器自己去管理父组件的尺寸。
+    Add()方法语法格式：
+        - Box.add(control, proportion, flag, border)
+            - control：要添加的控件；
+            - proportion：空间比例；
+            - flag：flag参数与bordr参数结合使用可以指定边距宽度，包括以下选项：
+                - wx.LEFT：左边距
+                - wx.RIGHT：右边距
+                - wx.BOTTOM：底边距
+                - wx.TOP：上边距
+                - wx.ALL：上下左右4边距
+                - wx.ALIGN_LEFT：左边对齐
+                - wx.ALIGN_RIGHT：右边对齐
+                - wx.ALIGN_TOP：顶部对齐
+                - wx.ALIGN_BOTTOM：底部对齐
+                - wx.ALIGN_CENTER_VERTICAL：垂直对齐
+                - wx.ALIGN_CENTER_HORIZONTAL：水平对齐
+                - wx.ALIGN_CENTER：居中对齐
+                - wx.EXPAND：所添加控件将占有sizer定位方向上所有可用控件
+            - border：控制所添加控件的边距，就是在部件之间添加一些像素的空白
+"""
+"""
+import wx
 
 
+class MyFrame(wx.Frame):
+    def __init__(self, parent, id):
+        wx.Frame.__init__(self, parent, id, '用户登录', size=(400, 300))
+        # 创建面板
+        panel = wx.Panel(self)
+
+        # 创建“确定”和“取消”按钮，并绑定事件
+        self.bt_confirm = wx.Button(panel, label = '确定')
+        self.bt_cancel = wx.Button(panel, label = '取消')
+
+        # 创建文本，左对齐
+        self.title = wx.StaticText(panel, label='请输入用户名和密码')
+        self.label_user = wx.StaticText(panel, label = '用户名：')
+        self.text_user = wx.TextCtrl(panel, style = wx.TE_LEFT)
+        self.label_pwd = wx.StaticText(panel, label = '密   码：')
+        self.text_pwd = wx.TextCtrl(panel, style = wx.TE_PASSWORD)
+
+        # 添加容器，容器中的控件横向排列
+        hsizer_user = wx.BoxSizer(wx.HORIZONTAL)
+        hsizer_user.Add(self.label_user, proportion = 0, flag = wx.ALL, border = 5)
+        hsizer_user.Add(self.text_user, proportion = 1, flag = wx.ALL, border = 5)
+
+        hsizer_pwd = wx.BoxSizer(wx.HORIZONTAL)
+        hsizer_pwd.Add(self.label_pwd, proportion = 0, flag = wx.ALL, border = 5)
+        hsizer_pwd.Add(self.text_pwd, proportion = 1, flag = wx.ALL, border = 5)
+
+        hsizer_button = wx.BoxSizer(wx.HORIZONTAL)
+        hsizer_button.Add(self.bt_confirm, proportion = 0, flag = wx.ALIGN_CENTER, border = 5)
+        hsizer_button.Add(self.bt_cancel, proportion = 1, flag = wx.ALIGN_CENTER, border = 5)
+
+        # 添加容器，容器中的控件按横向排列
+        vsizer = wx.BoxSizer(wx.VERTICAL)
+        vsizer.Add(self.title, proportion=0, flag=wx.BOTTOM | wx.TOP | wx.ALIGN_CENTER, border=15)
+        vsizer.Add(hsizer_user, proportion = 0, flag = wx.EXPAND | wx.LEFT | wx.RIGHT, border = 45)
+        vsizer.Add(hsizer_pwd, proportion = 0, flag = wx.EXPAND | wx.LEFT | wx.RIGHT, border = 45)
+        vsizer.Add(hsizer_button, proportion = 0, flag = wx.ALIGN_CENTER | wx.TOP, border = 15)
+        panel.SetSizer(vsizer)
 
 
+if __name__ == '__main__':
+    app = wx.App()
+    frame = MyFrame(parent=None, id=-1)
+    frame.Show()
+    app.MainLoop()
+"""
+# 19.2.7 - 事件处理
+
+# 19.2.7 - 1 - 什么是事件
+# 用户执行的动作就叫作事件。
+
+# 19.2.7 - 2 - 绑定事件
+"""
+    控件Bind()方法将事件处理函数绑定到给定的事件上；
+    例：
+    button.Bind(wx.EVT_BUTTON, OnclickSubmit)
+        - wx.EVT_BUTTON：事件类型为按钮类型
+        - OnclickSubmit：方法名，事件发生时执行该方法
+"""
+
+import wx
 
 
+class MyFrame(wx.Frame):
+    def __init__(self, parent, id):
+        wx.Frame.__init__(self, parent, id, '用户登录', size=(400, 300))
+        # 创建面板
+        panel = wx.Panel(self)
 
+        # 创建“确定”和“取消”按钮，并绑定事件
+        self.bt_confirm = wx.Button(panel, label = '确定')
+        self.bt_confirm.Bind(wx.EVT_BUTTON, self.OnclickSubmit)
+        self.bt_cancel = wx.Button(panel, label = '取消')
+        self.bt_cancel.Bind(wx.EVT_BUTTON, self.OnclickCancel)
 
+        # 创建文本，左对齐
+        self.title = wx.StaticText(panel, label='请输入用户名和密码')
+        self.label_user = wx.StaticText(panel, label = '用户名：')
+        self.text_user = wx.TextCtrl(panel, style = wx.TE_LEFT)
+        self.label_pwd = wx.StaticText(panel, label = '密   码：')
+        self.text_pwd = wx.TextCtrl(panel, style = wx.TE_PASSWORD)
 
+        # 添加容器，容器中的控件横向排列
+        hsizer_user = wx.BoxSizer(wx.HORIZONTAL)
+        hsizer_user.Add(self.label_user, proportion = 0, flag = wx.ALL, border = 5)
+        hsizer_user.Add(self.text_user, proportion = 1, flag = wx.ALL, border = 5)
 
+        hsizer_pwd = wx.BoxSizer(wx.HORIZONTAL)
+        hsizer_pwd.Add(self.label_pwd, proportion = 0, flag = wx.ALL, border = 5)
+        hsizer_pwd.Add(self.text_pwd, proportion = 1, flag = wx.ALL, border = 5)
 
+        hsizer_button = wx.BoxSizer(wx.HORIZONTAL)
+        hsizer_button.Add(self.bt_confirm, proportion = 0, flag = wx.ALIGN_CENTER, border = 5)
+        hsizer_button.Add(self.bt_cancel, proportion = 1, flag = wx.ALIGN_CENTER, border = 5)
 
+        # 添加容器，容器中的控件按横向排列
+        vsizer = wx.BoxSizer(wx.VERTICAL)
+        vsizer.Add(self.title, proportion=0, flag=wx.BOTTOM | wx.TOP | wx.ALIGN_CENTER, border=15)
+        vsizer.Add(hsizer_user, proportion = 0, flag = wx.EXPAND | wx.LEFT | wx.RIGHT, border = 45)
+        vsizer.Add(hsizer_pwd, proportion = 0, flag = wx.EXPAND | wx.LEFT | wx.RIGHT, border = 45)
+        vsizer.Add(hsizer_button, proportion = 0, flag = wx.ALIGN_CENTER | wx.TOP, border = 15)
+        panel.SetSizer(vsizer)
 
+    def OnclickSubmit(self, event):
+        """ 单击“确定”按钮执行方法 """
+        message = ''
+        username = self.text_user.GetValue()    # 获取输入的用户名
+        password = self.text_pwd.GetValue()     # 获取输入的密码
+        if username == '' or password == '':
+            message = '用户名或密码不能为空'
+        elif username == 'hello' and password == 'world':
+            message = '登录成功'
+        else:
+            message = '用户名和密码不匹配'
+        wx.MessageBox(message)
 
+    def OnclickCancel(self, event):
+        """ 单击“取消”按钮，执行方法 """
+        self.text_user.SetValue('')
+        self.text_pwd.SetValue('')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    app = wx.App()
+    frame = MyFrame(parent=None, id=-1)
+    frame.Show()
+    app.MainLoop()
