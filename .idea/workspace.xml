@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87c134fd-dce8-437d-acdb-fbe607df932d" name="Default Changelist" comment="">
+    <list default="true" id="87c134fd-dce8-437d-acdb-fbe607df932d" name="Default Changelist" comment="19章 - 常用的GUI框架 - 完成">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-23/.idea/learn-23.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-16.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn-16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-22.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn-22.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -42,17 +47,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/learn-23" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\python\python-learn\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\python\python-learn\images" />
+      <recent name="G:\python\python-learn\learn-19" />
+      <recent name="G:\python\python-learn" />
       <recent name="G:\code\Python\demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.learn-16">
-    <configuration name="demo13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.learn-20">
+    <configuration name="button2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,12 +76,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn-19" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo13.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-19/button2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="learn-13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="img (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,12 +98,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn-19" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-13.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-19/img.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="learn-14" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="learn-20" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,7 +125,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-14.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-20.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="learn-15" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="learn-21" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,7 +147,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-15.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-21.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +156,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="learn-16" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="textedit" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,12 +164,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn-19" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-16.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-19/textedit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.learn-16" />
-        <item itemvalue="Python.learn-15" />
-        <item itemvalue="Python.learn-14" />
-        <item itemvalue="Python.learn-13" />
-        <item itemvalue="Python.demo13" />
+        <item itemvalue="Python.learn-20" />
+        <item itemvalue="Python.learn-21" />
+        <item itemvalue="Python.textedit" />
+        <item itemvalue="Python.img (1)" />
+        <item itemvalue="Python.button2 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -211,40 +227,123 @@
       <workItem from="1576673416837" duration="10346000" />
       <workItem from="1576760158739" duration="7841000" />
       <workItem from="1576842330437" duration="8753000" />
+      <workItem from="1577673400266" duration="408000" />
+      <workItem from="1577673831324" duration="319000" />
     </task>
+    <task id="LOCAL-00001" summary="16章完成">
+      <created>1576985346667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576985346667</updated>
+    </task>
+    <task id="LOCAL-00002" summary="17章网络编程 - 完成">
+      <created>1577004960884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577004960884</updated>
+    </task>
+    <task id="LOCAL-00003" summary="19章 - 常用的GUI框架 - 学习中">
+      <created>1577437066630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577437066630</updated>
+    </task>
+    <task id="LOCAL-00004" summary="19章 - 常用的GUI框架 - 完成">
+      <created>1577503951553</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577503951553</updated>
+    </task>
+    <task id="LOCAL-00005" summary="20章 - pygame游戏框架 - 完成">
+      <created>1577513252046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577513252046</updated>
+    </task>
+    <task id="LOCAL-00006" summary="21章 - 网络爬虫框架 - 学习中">
+      <created>1577523400941</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577523400941</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="16章完成" />
+    <MESSAGE value="17章网络编程 - 完成" />
+    <MESSAGE value="19章 - 常用的GUI框架 - 学习中" />
+    <MESSAGE value="19章 - 常用的GUI框架 - 完成" />
+    <MESSAGE value="20章 - pygame游戏框架 - 完成" />
+    <MESSAGE value="21章 - 网络爬虫框架 - 学习中" />
+    <option name="LAST_COMMIT_MESSAGE" value="21章 - 网络爬虫框架 - 学习中" />
   </component>
   <component name="WindowStateProjectService">
     <state x="662" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576763309781">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
     <state x="662" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/90.0.1958.1152@90.0.1958.1152" timestamp="1576763309781" />
-    <state x="801" y="379" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576585366887">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state x="697" y="355" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577513428645">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="697" y="355" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577513428645" />
     <state x="801" y="379" key="#com.intellij.fileTypes.FileTypeChooser/90.0.1958.1152@90.0.1958.1152" timestamp="1576585366887" />
+    <state x="818" y="138" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1577497200334">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="818" y="138" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577497200334" />
+    <state x="801" y="262" width="474" height="489" key="#com.intellij.tools.ToolEditorDialog" timestamp="1577503408634">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="801" y="262" width="474" height="489" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577503408634" />
+    <state x="668" y="152" key="#learn-16" timestamp="1576974816100">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="668" y="152" key="#learn-16/0.0.1920.1080@0.0.1920.1080" timestamp="1576974816100" />
+    <state x="565" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577422276872">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="565" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1577422276872" />
+    <state x="408" y="87" width="1280" height="811" key="CommitChangelistDialog2" timestamp="1577523399227">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="408" y="87" width="1280" height="811" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577523399227" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1576763320317">
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/90.0.1958.1152@90.0.1958.1152" timestamp="1576763320317" />
-    <state width="1915" height="326" key="GridCell.Tab.0.bottom" timestamp="1576852145029">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state x="408" y="186" key="FileChooserDialogImpl" timestamp="1577669786081">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="408" y="186" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1577669786081" />
+    <state width="1362" height="313" key="GridCell.Tab.0.bottom" timestamp="1577523521050">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1362" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577523521050" />
     <state width="1915" height="326" key="GridCell.Tab.0.bottom/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145029" />
-    <state width="1915" height="326" key="GridCell.Tab.0.center" timestamp="1576852145028">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state width="1362" height="313" key="GridCell.Tab.0.center" timestamp="1577523521050">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1362" height="313" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577523521050" />
     <state width="1915" height="326" key="GridCell.Tab.0.center/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145028" />
-    <state width="1915" height="326" key="GridCell.Tab.0.left" timestamp="1576852145028">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state width="1362" height="313" key="GridCell.Tab.0.left" timestamp="1577523521050">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1362" height="313" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577523521050" />
     <state width="1915" height="326" key="GridCell.Tab.0.left/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145028" />
-    <state width="1915" height="326" key="GridCell.Tab.0.right" timestamp="1576852145028">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state width="1362" height="313" key="GridCell.Tab.0.right" timestamp="1577523521050">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1362" height="313" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577523521050" />
     <state width="1915" height="326" key="GridCell.Tab.0.right/90.0.1958.1152@90.0.1958.1152" timestamp="1576852145028" />
     <state width="1915" height="392" key="GridCell.Tab.1.bottom" timestamp="1576768685897">
       <screen x="90" y="0" width="1958" height="1152" />
@@ -266,27 +365,28 @@
       <screen x="90" y="0" width="1958" height="1152" />
     </state>
     <state width="212" height="477" key="HiddenNamespacesPopup/90.0.1958.1152@90.0.1958.1152" timestamp="1576763273004" />
-    <state x="640" y="80" width="1286" height="941" key="SettingsEditor" timestamp="1576412602516">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state x="539" y="75" width="1286" height="941" key="SettingsEditor" timestamp="1577674086230">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="539" y="75" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577674086230" />
     <state x="640" y="80" width="1286" height="941" key="SettingsEditor/90.0.1958.1152@90.0.1958.1152" timestamp="1576412602516" />
-    <state x="755" y="400" key="com.intellij.ide.util.TipDialog" timestamp="1576844414219">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1577523408241">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1577523408241" />
+    <state x="652" y="375" key="com.intellij.ide.util.TipDialog" timestamp="1577673831266">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="652" y="375" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577673831266" />
     <state x="755" y="400" key="com.intellij.ide.util.TipDialog/90.0.1958.1152@90.0.1958.1152" timestamp="1576844414219" />
-    <state x="732" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1576850862035">
-      <screen x="90" y="0" width="1958" height="1152" />
+    <state x="332" y="272" key="git4idea.merge.GitPullDialog" timestamp="1577665204231">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="332" y="272" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577665204231" />
+    <state x="630" y="238" width="672" height="636" key="search.everywhere.popup" timestamp="1577675691935">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="630" y="238" width="672" height="636" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577675691935" />
     <state x="732" y="254" width="672" height="678" key="search.everywhere.popup/90.0.1958.1152@90.0.1958.1152" timestamp="1576850862035" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/demo$learn_15.coverage" NAME="learn-15 Coverage Results" MODIFIED="1576767760484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$learn_12.coverage" NAME="learn-12 Coverage Results" MODIFIED="1576584419314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$learn_16.coverage" NAME="learn-16 Coverage Results" MODIFIED="1576852145023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$learn_11.coverage" NAME="learn-11 Coverage Results" MODIFIED="1576417041631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$demo.coverage" NAME="demo Coverage Results" MODIFIED="1576336504193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$learn_14.coverage" NAME="learn-14 Coverage Results" MODIFIED="1576684368231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$learn_13.coverage" NAME="learn-13 Coverage Results" MODIFIED="1576588642749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/demo$demo13.coverage" NAME="demo13 Coverage Results" MODIFIED="1576587376432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

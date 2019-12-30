@@ -51,6 +51,7 @@
 """
     安装命令：pip install flask
     安装完后，查看所有安装包：pip list --format columns
+    ****注意：安装时在虚拟环境中安装
 """
 
 # 22.2.3 - 第一个Flask程序
