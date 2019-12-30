@@ -155,9 +155,60 @@
         以下都在在Django交互式命令行中执行：
             - 启用交汇命令行：python manage.py shell
             - 导入数据模型命令：from app1.models import Person, Order
+            - 创建数据：
+                - 方法1：p = Person.objects.create(first_name='hugo', last_name='zhang')
+                - 方法2：
+                        p = Person(first_name='hugo', last_name='张')
+                        p.save()
+            - 查询数据：
+                - 查询所有数据：Person.objects.all()
+                - 查询单个数据：Person.objects.get(first_name='hugo')
+                - 查询指定条件数据：
+                    - Person.objects.filter(first_name__exact='hugo')                                           # 指定first_name字段值必须为hugo
+                    - Person.objects.filter(last_name__iexact='zhang')                                          # 不区分大小写查找值必须为zhang的，如zhanG
+                    - Person.objects.filter(id__gt=1)                                                           # 查找所有id值大于1的
+                    - Person.objects.filter(id__lt=100)                                                         # 查找所有id值小于100的
+                    - Person.objects.exclude(created_at__gt=datetime.datetime.now(tz=datetime.timezone.utc))    # 排除
+                    - Person.objects.filter(first_name__contains='h').order_by('id')                            # 包含'h'的
+                    - Person.objects.filter(first_name__icontains='h')                                          # 不包含'h'的
+            - 修改数据
+                p = Person.objects.get(first_name='hugo')
+                p.first_name = 'john'
+                p.last_name = 'wang'
+                p.save()
+            - 存在则修改，不存在创建
+                p, is_created = Person.objects.get_or_create(
+                    first_name = 'hugo',
+                    defaults = {'last_name': 'wang'}
+                )
+            - 删除数据
+                Person.objects.get(id=1).delete()
+                (1,('app1.Person':1))
 """
 
+# 23.2.4 - 管理后台
+"""
+    代码见：app1/admin.py
+    -----------------------------------------------------------------------------------------------------
+    from django.contrib import admin                        # 引入admin模块
 
+    # Register your models here.
+    from app1.models import Person, Order                   # 引入数据模型类
+    
+    
+    class PersonAdmin(admin.ModelAdmin):
+        '''
+        创建PersonAdmin类，继承于admin.ModelAdmin
+        '''
+        list_display = ('first_name', 'last_name')          # 配置展示列表，在Person板块下的列表展示
+        list_filter = ('first_name', 'last_name')           # 配置过滤查询字段，在Person板块下右侧过滤框
+        search_fields = ('first_name',)                     # 配置可以搜索的字段，在Person板块下右侧搜索框
+        readonly_fields = ('created_at', 'updated_at')      # 配置只读字段展示，设置后该字段不可编辑
+    
+    
+    admin.site.register(Person, PersonAdmin)                # 绑定Person模型到PersonAdmin管理后台
+    ----------------------------------------------------------------------------------------------------
+"""
 
 
 
