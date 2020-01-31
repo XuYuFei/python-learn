@@ -109,7 +109,7 @@ class Obstacle():
         self.width, self.height = self.rect.size                            # 获取位图宽高
 
         self.x = 800                                                        # 障碍物绘制坐标
-        self.y = 200 - (self.height / 2)
+        self.y = int(200 - (self.height / 2))
         self.rect.center = (self.x, self.y)
 
     # 障碍物移动
@@ -136,9 +136,9 @@ class Obstacle():
         totalWidth = 0                                                          # 要显示所有数字的总宽度
         for digit in self.scoreDigits:
             totalWidth += self.numbers[digit].get_width()                       # 获取计分图片宽度
-        Xoffset = (SCREENWIDTH - totalWidth) / 2                                # 分数横向位置
+        Xoffset = int((SCREENWIDTH - totalWidth) / 2)                                # 分数横向位置
         for digit in self.scoreDigits:
-            SCREEN.blit(self.numbers[digit], (Xoffset, SCREENHEIGHT * 0.1))     # 绘制分数
+            SCREEN.blit(self.numbers[digit], (Xoffset, int(SCREENHEIGHT * 0.1)))     # 绘制分数
             Xoffset += self.numbers[digit].get_width()                          # 随着数字增加改变位置
 
 
@@ -151,7 +151,7 @@ def game_over():
     screen_h = pygame.display.Info().current_h
 
     over_img = pygame.image.load('image/gameover.png').convert_alpha()      # 加载游戏结束的图片
-    SCREEN.blit(over_img, ((screen_w - over_img.get_width()) / 2, (screen_h - over_img.get_height()) / 2))
+    SCREEN.blit(over_img, (int((screen_w - over_img.get_width()) / 2), int((screen_h - over_img.get_height()) / 2)))
 
 
 def mainGame():
@@ -225,5 +225,6 @@ def mainGame():
 
 if __name__ == '__main__':
     mainGame()
+    
 
 
